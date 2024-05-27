@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Brands.html">Brands</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+        <h1>Sneaker Store</h1>
+        <a href="#" class="cart-icon">
+            <img src="cart.png" alt="Cart">
+            <span class="cart-counter">0</span>
+        </a>
+        <a href="#" class="register-button" id="registerButton">Login</a>
+        <script src="script.js"></script>
+        <div class="user-display"></div>
+    </header>
+
+    <div class="registration-popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="brands">
+        <h2>Our Brands</h2>
+        <div class="brand-list">
+            <div class="brand">
+                <a href="nike.html">
+                    <img src="brand1.jpg" alt="Nike">
+                    <h3>nike</h3>
+                </a>
+                <p>Nike is a global leader in sportswear and footwear, known for its iconic swoosh logo and high-quality athletic products. Established in 1964, it's synonymous with innovation and is endorsed by top athletes worldwide.</p>
+            </div>
+            <div class="brand">
+                <a href="adidas.html">
+                    <img src="brand2.jpg" alt="Adidas">
+                    <h3>adidas</h3>
+                </a>
+                <p>Adidas is a global sportswear brand known for its iconic three-stripe logo. They produce athletic footwear, apparel, and accessories. Founded in 1949, Adidas is a leader in sports fashion and performance gear.</p>
+            </div>
+            <div class="brand">
+                <a href="puma.html">
+                    <img src="brand3.jpg" alt="Puma">
+                    <h3>puma</h3>
+                </a>
+                <p>Puma is a well-known sportswear brand, recognized for its distinctive leaping cougar logo. Established in 1948, it offers a wide range of athletic footwear, apparel, and accessories.</p>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <p>&copy; 2023 Sneaker Store</p>
+    <p>Address: Martas-Rinkas1, Riga, Latvija</p>
+    <p>Phone: +371 22303133</p>
+</footer>
+
+</body>

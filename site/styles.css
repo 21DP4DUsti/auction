@@ -1,0 +1,578 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #050505, #ebecee);
+    color: #fdfafa;
+    }
+    
+    header {
+    background: linear-gradient(45deg, #030303, #eaeef1);
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    }
+    
+    h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    }
+    
+    nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    }
+    
+    nav li {
+    display: inline;
+    margin: 0 1rem;
+    }
+    
+    nav a {
+    color: #fff;
+    text-decoration: none;
+    }
+    
+    h1 {
+    font-size: 2rem;
+    }
+    
+    .cart-icon {
+    color: #1b1b1b;
+    text-decoration: none;
+    border: 2px solid #1b1b1b;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    }
+    
+    .featured-products {
+    padding: 2rem;
+    }
+    
+    .featured-products h2 {
+    font-size: 1.5rem;
+    }
+    
+    .product-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .product {
+        text-align: center;
+        max-width: 250px;
+        margin: 15px;
+        padding: 15px;
+        background-color: #999696;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .product:hover {
+        transform: translateY(-5px);
+    }
+    
+    .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .product h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    
+    .product p {
+        color: #333;
+    }
+    
+    .product button {
+        background-color: #c51919;
+        color: #fff;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .product button:hover {
+        background-color: #555;
+    }
+    
+    .newsletter {
+    background-color: #333;
+    text-align: center;
+    padding: 2rem;
+    }
+    
+    .newsletter h2 {
+    font-size: 1.5rem;
+    }
+    
+    .newsletter input,
+    .newsletter button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    }
+    
+    .newsletter input {
+    width: 100%;
+    }
+    
+    footer {
+    background-color: #0f1111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    }
+    .newsletter input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #4b4a4a;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: 300px;
+    }
+    .contact {
+    padding: 2rem;
+    text-align: center;
+    }
+    
+    .contact h2 {
+    font-size: 1.5rem;
+    }
+    
+    .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    }
+    
+    .contact form label {
+    font-weight: bold;
+    }
+    
+    .contact form input[type="text"],
+    .contact form input[type="email"],
+    .contact form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #e0dada;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    }
+    
+    .contact form textarea {
+    height: 150px;
+    resize: vertical;
+    }
+    
+    .contact form input[type="submit"] {
+    background-color: #333;
+    color: #cfc7c7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    }
+    
+    .contact-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    }
+    
+    .contact-nav li {
+    display: inline;
+    margin: 0 1rem;
+    }
+    
+    .contact-nav a {
+    color: #312f2f;
+    text-decoration: none;
+    }
+    .brand-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    
+    .brand {
+    max-width: 300px;
+    margin: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 10px;
+    }
+    
+    .brand img {
+    max-width: 100%;
+    height: auto;
+    }
+    .register-button {
+    color: #333;
+    background-color: #f3f1f1;
+    border: 2px solid #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    }
+    
+    .register-button:hover {
+    background-color: #333;
+    color: #161515;
+    }
+    
+    
+    .registration-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    }
+    
+    .popup-content {
+    background-color: #161616;
+    margin: 5% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 10%;
+    border-radius: 10px;
+    }
+    
+    .close-button {
+    color: #eee8e8;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+    
+    .close-button:hover,
+    .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    
+    .popup-content h2 {
+    text-align: center;
+    }
+    
+    .popup-content label,
+    .popup-content input,
+    .popup-content button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+    
+    .popup-content input,
+    .popup-content button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    }
+    
+    .popup-content button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+    
+    .popup-content button:hover {
+    background-color: #555;
+    }
+    .cart-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+    transition: all 0.5s ease-in-out;
+    }
+    
+    .cart-content {
+    background-color: #1d1c1c;
+    margin: 5% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: all 0.3s;
+    }
+    
+    .cart-content:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .close-cart {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    
+    .close-cart:hover {
+    color: black;
+    text-decoration: none;
+    }
+    
+    .cart-items {
+    width: 100%;
+    border-collapse: collapse;
+    }
+    
+    .cart-items th, .cart-items td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    }
+    
+    .sneaker-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
+    
+    .sneaker {
+    text-align: center;
+    margin: 10px;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    transition: all 0.3s;
+    }
+    
+    .sneaker:hover {
+    transform: scale(1.1);
+    }
+    
+    .sneaker img {
+    max-width: 100%;
+    }
+    
+    .sneaker h3, .sneaker p {
+    margin: 5px 0;
+    }
+    
+    .cart-icon img {
+    width: 30px;
+    height: auto;
+    }
+    
+    .cart-counter {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(218, 17, 17);
+    color: rgb(20, 18, 18);
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    }
+    .advertisement {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .advertisement-content {
+        position: relative;
+    }
+    
+    .gif-container {
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+        width: 100%; /* Ширина блока для гифки */
+        max-width: 500px; /* Максимальная ширина блока для гифки, можно изменить */
+        margin: 0 auto; /* Центрирование блока */
+    }
+    
+    .gif-container img {
+        width: 100%;
+        max-width: 100%; /* Растягиваем гифку по ширине блока */
+        height: auto;
+        animation: floatAnimation 4s ease-in-out infinite;
+    }
+    
+    .shipping-button {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: #434242;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+    
+    .shipping-button:hover {
+        background-color: #0f0f0f;
+    }
+    
+    .exclusive-label {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #ffcc00;
+        color: #333;
+        padding: 5px 10px;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    body.dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+    }
+    
+    header.dark-mode, 
+    footer.dark-mode {
+        background: #1f1f1f;
+    }
+    
+    nav.dark-mode a {
+        color: #ffffff;
+    }
+    
+    .product.dark-mode {
+        background-color: #2a2a2a;
+        color: #ffffff;
+    }
+    
+    .newsletter.dark-mode {
+        background-color: #333333;
+    }
+    
+    .popup-content.dark-mode {
+        background-color: #2a2a2a;
+        color: #ffffff;
+    }
+    
+    .cart-content.dark-mode {
+        background-color: #2a2a2a;
+        color: #ffffff;
+    }
+    
+    .advertisement-content.dark-mode {
+        background-color: #333333;
+    }
+    
+    .theme-toggle-button {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+    
+    .theme-toggle-button:hover {
+        background-color: #555;
+    }
+    .sneaker-images {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    
+    .sneaker-images img {
+        width: 100px; /* Регулируйте размер изображений по вашему усмотрению */
+        height: auto;
+    }
+    .sneaker-info-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(45, 45, 45);
+        padding: 20px;
+        color: black;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    
+    .popup-content {
+        background-color: #fff;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #1c1c1c;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    .popup-content table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .popup-content table td {
+        padding: 10px;
+        border: 1px solid #191919;
+    }
+    
+    #sneakerImage {
+        max-width: 100%;
+        height: auto;
+    }
